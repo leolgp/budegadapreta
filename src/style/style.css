@@ -1,0 +1,313 @@
+.logo {
+    display: flex;
+    margin: 1rem 1rem 0;
+    justify-content: space-between;
+    max-width: 90%;
+    font-family: 'Dosis';
+    color: brown;
+}
+
+.logo img {
+    max-width: 20%;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 25vw;
+    margin: 1rem;
+    gap: 0.5rem;
+}
+
+.videos video {
+    width: 30vw;
+}
+
+.mesa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 0.5rem;
+    position: relative;
+}
+
+.mesa img {
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 12%;
+}
+
+.cardapio {
+    position: absolute;
+    font-family: 'Dosis';
+    top: 3%;
+    left: 12%;
+}
+
+.cardapio h2 {
+    font-size: 70px;
+    font-weight: 700;
+    color: bisque;
+    text-shadow: 5px 6px 5px black;
+}
+.cardapio h3 {
+    font-size: 25px;
+    font-weight: 500;    
+    color: rgb(247, 240, 232);
+    text-shadow: 5px 4px 2px black;
+}
+
+.content{
+   position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+input{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+}
+
+.pergunta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Dosis';
+    font-weight: 700;
+    font-size: 42px;
+    max-width: 400px;
+    margin-bottom: 15px;
+    color: bisque;
+}
+
+.pergunta .seta {
+    margin-left: 1rem;
+    width: 60px;
+    height: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(/src/image/folha-cinza.gif);
+}
+
+.resposta {
+    display: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.container .menu {
+    display: block;
+    width: 20px;
+    height: 20px;
+    align-self: flex-end;
+}
+
+.container .linha{
+    background-color: bisque;
+    display: block;
+    width: 390px;
+    height: 1px;
+    border: 1px solid bisque;
+    transition: .5s ease-in-out;
+    z-index: 5;
+}
+
+
+.perguntaResposta input:checked ~ label .resposta  {
+    display: flex;
+}
+
+.perguntaResposta input:checked ~ label .pergunta .seta{
+        background-image: url(/src/image/folha.gif);
+    }
+
+
+li{
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    color: rgb(246, 239, 230);
+    margin-left: 5%;
+    width: 50vw;
+}
+ 
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+
+.transparencia{
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+    width: 100%;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 40%;
+}
+
+.rodape .imagem{
+    margin: 0 auto;
+    max-width: 30%;
+}
+
+.rodape .texto{
+     font-family: 'Dosis';
+    color: brown;
+    text-align: center;
+    font-size: 71%;
+}
+
+.rodape .rede-social a {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 30px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    padding: 15px;
+    width: 65px;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .rede-social a:hover {
+    background-color: #1ED760;
+    color: #fff;
+}
+
+.rodape .copyright {
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: brown;
+}
+
+i{
+    color: brown;
+}
+
+@media(max-width: 570px) {
+ .cardapio h2{
+    font-size: 48px;
+ }
+ .cardapio h3{
+    font-size: 17px;
+ }
+
+ .pergunta{
+    font-size: 17px;
+    margin-bottom: 2px;
+ }
+
+ .pergunta .seta{
+    height: 20px;
+ }
+
+ .resposta ul li{
+    font-size: 14px;
+ }
+ .rodape .imagem{
+    max-width: 27%;
+ }
+ .rodape .texto{
+    font-size: 50%;
+ }
+ .rodape .copyright{
+    font-size: 11px;
+ }
+ .transparencia{
+    bottom: 8%;
+ }
+
+ 
+@media(max-width: 400px) {
+    .cardapio h2{
+       font-size: 30px;
+    }
+    .cardapio h3{
+       font-size: 12px;
+    }
+   
+    .pergunta{
+       margin-bottom: 0px;
+    }
+   
+    .pergunta .seta{
+       height: 16px;
+    }
+
+    .resposta ul li{
+        font-size: 12px;
+     }
+
+    .rodape .imagem{
+       max-width: 18%;
+    }
+   
+    .rodape .copyright{
+       font-size: 6px;
+    }
+    .transparencia{
+       bottom: 9%;
+    }
+
+    
+.rodape .copyright {
+    margin-top: 2px;
+}
+}
+
+@media(max-width: 375px) {
+    .cardapio h2{
+       font-size: 26px;
+    }
+    .cardapio h3{
+       font-size: 10px;
+    }
+   
+    .pergunta{
+       margin-bottom: 0px;
+    }
+   
+    .pergunta .seta{
+       height: 14px;
+    }
+
+    .resposta ul li{
+        font-size: 10px;
+     }
+
+    .rodape .imagem{
+       max-width: 15%;
+    }
+    .rodape .texto{
+       font-size: 50%;
+    }
+    .rodape .copyright{
+       font-size: 7px;
+    }
+    .transparencia{
+       bottom: 10%;
+    }
+.rodape .copyright {
+    margin-top: 2px;
+}
+}
+@media(max-width: 319px) {
+
+.rodape .texto{
+    font-size: 30%;
+ }
+}}
