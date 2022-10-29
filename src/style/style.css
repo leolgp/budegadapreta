@@ -91,7 +91,7 @@ label{
     height: 36px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/src/image/folha-cinza.gif);
+    background-image: url(src/image/folha-cinza.gif);
 }
 
 .resposta {
@@ -126,7 +126,7 @@ label{
 }
 
 .perguntaResposta input:checked ~ label .pergunta .seta{
-        background-image: url(/src/image/folha.gif);
+        background-image: url(src/image/folha.gif);
     }
 
 
